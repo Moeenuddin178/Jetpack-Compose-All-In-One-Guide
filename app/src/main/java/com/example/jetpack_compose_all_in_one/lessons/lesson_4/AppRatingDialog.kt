@@ -29,6 +29,7 @@ import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpack_compose_all_in_one.R
 import com.example.jetpack_compose_all_in_one.ui.components.GradientButton
 import com.example.jetpack_compose_all_in_one.ui.theme.ShadowColor
@@ -37,6 +38,7 @@ import com.example.jetpack_compose_all_in_one.ui.theme.dp_15
 import kotlinx.coroutines.delay
 
 //Assigned to Luan
+@Preview
 @Composable
 fun AppRatingDialog() {
     var showPopUp by remember { mutableStateOf(true) }
@@ -118,7 +120,7 @@ fun AppRatingDialog() {
 
     }
 }
-
+@Preview
 @Composable
 fun RatingStar() {
     var rating by remember { mutableStateOf(0) }

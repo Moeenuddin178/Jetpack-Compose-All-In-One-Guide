@@ -5,6 +5,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpack_compose_all_in_one.ui.components.CustomSpacer
 import com.example.jetpack_compose_all_in_one.ui.components.LessonHeader
 import com.example.jetpack_compose_all_in_one.ui.components.StyleableLessonText
@@ -16,6 +17,7 @@ import com.example.jetpack_compose_all_in_one.ui.theme.dp_5
  *
  * * [Box] stacks it's children on top of each other.
  */
+@Preview
 @Composable
 fun LessonBox() {
 

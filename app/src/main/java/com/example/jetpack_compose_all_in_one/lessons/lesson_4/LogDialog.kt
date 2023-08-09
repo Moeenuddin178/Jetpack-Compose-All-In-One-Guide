@@ -18,6 +18,7 @@ import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.text.font.FontFamily
 import androidx.compose.ui.text.font.FontWeight
 import androidx.compose.ui.text.style.TextAlign
+import androidx.compose.ui.tooling.preview.Preview
 import com.example.jetpack_compose_all_in_one.ui.theme.Green700
 import com.example.jetpack_compose_all_in_one.ui.theme.Red500
 import com.example.jetpack_compose_all_in_one.ui.theme.dp_30
@@ -26,12 +27,13 @@ import com.example.jetpack_compose_all_in_one.ui.theme.sp_32
 import com.example.jetpack_compose_all_in_one.ui.views.main_ui.MainActivity
 
 //Assign to Alex
+@Preview
 @Composable
 fun LogoutDialogUI() {
     KillApp()
 }
 
-
+@Preview
 @Composable
 fun KillApp() {
     val activity = (LocalContext.current as? MainActivity)

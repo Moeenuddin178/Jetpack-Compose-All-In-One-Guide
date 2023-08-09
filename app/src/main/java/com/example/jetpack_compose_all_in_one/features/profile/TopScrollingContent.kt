@@ -17,10 +17,18 @@ import androidx.compose.ui.draw.alpha
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.layout.ContentScale
 import androidx.compose.ui.res.painterResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import com.example.jetpack_compose_all_in_one.R
+
+
+@Preview
+@Composable
+fun MyViewPreview() {
+    TopScrollingContent(scrollState = ScrollState(0))
+}
 
 @Composable
 fun TopScrollingContent(scrollState: ScrollState) {

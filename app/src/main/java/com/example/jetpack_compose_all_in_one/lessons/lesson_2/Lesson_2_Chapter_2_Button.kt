@@ -39,6 +39,7 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import com.example.jetpack_compose_all_in_one.ui.components.FullWidthRow
 import com.example.jetpack_compose_all_in_one.ui.components.LessonHeader
@@ -50,6 +51,7 @@ fun Lesson_2_Chapter_2_Screen() {
     LessonContent()
 }
 
+@Preview
 @Composable
 private fun LessonContent() {
 

@@ -53,6 +53,7 @@ import androidx.compose.ui.platform.LocalDensity
 import androidx.compose.ui.res.imageResource
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
+import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.IntOffset
 import androidx.compose.ui.unit.IntSize
 import androidx.compose.ui.unit.LayoutDirection
@@ -68,6 +69,7 @@ import com.example.jetpack_compose_all_in_one.ui.components.FullWidthRow
 import com.example.jetpack_compose_all_in_one.ui.components.LessonHeader
 import com.example.jetpack_compose_all_in_one.ui.components.LessonText2
 
+@Preview
 @Composable
 fun Lesson_2_Chapter_4_Image() {
     TutorialContent()
@@ -568,6 +570,7 @@ fun ImageDownloadWithGlideExample() {
     glide
         .asBitmap()
         .load(url)
+        .placeholder(com.stripe.android.payments.R.drawable.ic_link_error)
         .into(target)
 
     Column(
